@@ -1,22 +1,50 @@
-# MindSight — Privacy Policy
+# AVITAN — Privacy Policy
 
-*Last updated: 2026-08-02*
+*Last updated: 2026-08-05*
 
 ## In one sentence
 
-MindSight is a **local-first** companion: almost everything you tell it stays
+AVITAN is a **local-first** companion: almost everything you tell it stays
 on your phone, in a private on-device database. It does not require an
 account, does not sell data, and never shows ads.
 
-## 1. What MindSight collects
+## 1. What AVITAN collects
 
 | Data | What it is | Where it lives |
 |---|---|---|
 | Your chat text | The messages you type in the Chat tab | On-device database only |
 | Extracted tracking data | Money, attendance, schedule, goals, sleep, screen-time logs that you confirm | On-device database only |
+| Health readings (optional) | Blood sugar, blood pressure, heart rate, weight, steps — logged by you in chat or synced read-only from Google Health Connect | On-device database only |
+| Your notes (optional) | Notes you write or save from chat ("remember that…") | On-device database only |
 | Notification summaries (optional) | Titles and bodies of app notifications, with names and phone numbers **redacted on-device** before storage | On-device database only |
 | Screen-time stats (optional) | Which apps you use and for how long | On-device database only |
 | Anonymous usage analytics (optional) | Event counts only (e.g. "app opened", "money entry confirmed") — **never** message content or names | On-device, then sent as day-old digests to our AI proxy only if you opt in |
+
+## 1a. Health Connect sync (optional)
+
+- With your explicit consent, AVITAN can **read** blood sugar, blood
+  pressure, heart rate, weight and steps from Google Health Connect (the
+  data apps and wearables on your phone collect).
+- This is **read-only**: AVITAN never writes, edits or deletes data in
+  Health Connect.
+- Synced readings are stored **only in the on-device database** — they are
+  never uploaded, sold or shared with anyone.
+- You control this at any time: a **Disconnect** button inside the app, or
+  the Health Connect app's own permission screen, where you can also
+  revoke each data type individually.
+- The optional "hourly background sync" reads new readings in the
+  background only if you enable it and grant it in the Health Connect app.
+
+## 1b. Health alerts (optional, on-device)
+
+- When you enable **Health alerts**, AVITAN checks every new reading
+  against fixed thresholds — blood sugar below 70 mg/dL, above 250 mg/dL,
+  or blood pressure at 180/120 or higher.
+- Alerts are computed **entirely on your device**: a full-screen alarm for
+  low blood sugar, a sound notification for the other two. No AI is
+  involved and no data leaves the device to decide an alert.
+- The alerts toggle is in the Health tab → Readings, and you can turn it
+  off at any time.
 
 ## 2. Where your data lives
 
@@ -46,7 +74,7 @@ subscription license.
 | Service | Purpose | Data shared |
 |---|---|---|
 | Google Play | Subscription billing (₹299/month, optional) | Purchase tokens (Google only, never us) |
-| MindSight AI proxy (our own server) | Routing AI requests for subscribers | Your message + context summary; no message storage |
+| AVITAN AI proxy (our own server) | Routing AI requests for subscribers | Your message + context summary; no message storage |
 | DeepSeek (our AI provider) | Generating AI replies | Your message + context summary (via our proxy) |
 | Sentry (optional) | Crash reporting — only if the developer enables it in the build | Anonymous device/stack-trace data, no personal data |
 | Google Play Games/services (Android OS) | Standard OS services | Per Android OS policy |
@@ -65,13 +93,15 @@ subscription license.
 - **Backup / restore**: Settings → Backup & restore (manual export/import).
 - **Disable capture**: turn off notification insights, screen-time, money or
   attendance tracking at any time in Settings.
+- **Health Connect**: connect/disconnect in the Health tab; each data type
+  can be revoked individually in the Health Connect app.
 - **Decline analytics**: keep "Anonymous usage analytics" off (it is off by
   default).
 - **Delete the app** removes all on-device data.
 
 ## 7. Children's privacy
 
-MindSight is designed for users 13 and older. It does not knowingly collect
+AVITAN is designed for users 13 and older. It does not knowingly collect
 personal information from children under 13.
 
 ## 8. Changes & contact
