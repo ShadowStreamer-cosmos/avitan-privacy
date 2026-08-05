@@ -73,7 +73,7 @@ subscription license.
 
 | Service | Purpose | Data shared |
 |---|---|---|
-| Google Play | Subscription billing (₹299/month, optional) | Purchase tokens (Google only, never us) |
+| Google Play | Subscription billing (₹399/month after ₹299 first-month intro, optional) | Purchase tokens (Google only, never us) |
 | AVITAN AI proxy (our own server) | Routing AI requests for subscribers | Your message + context summary; no message storage |
 | DeepSeek (our AI provider) | Generating AI replies | Your message + context summary (via our proxy) |
 | Sentry (optional) | Crash reporting — only if the developer enables it in the build | Anonymous device/stack-trace data, no personal data |
